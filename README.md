@@ -56,3 +56,6 @@ DevOps 平台：[https://devops.phodal.com](https://devops.phodal.com/checklists
 3. 处理文件目录移动，文件重命名的情况。（即忽略文件的变更）
 4. 使用传统工具，检测语法问题，诸如 pre-commit 的情况。
 
+## License
+
+This code is distributed under the MPL 2.0 license. See `LICENSE` in this directory.
