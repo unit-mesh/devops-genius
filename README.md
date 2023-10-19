@@ -1,6 +1,9 @@
 <h1 align="center">DevOps Genius</h1>
 
 <p align="center">
+  <a href="https://github.com/unit-mesh/devops-genius/actions/workflows/build.yml">
+    <img src="https://github.com/unit-mesh/devops-genius/actions/workflows/build.yml/badge.svg" alt="CI/CD" />
+  </a>
   <a href="https://github.com/unit-mesh/chocolate-factory">
     <img src="https://img.shields.io/badge/powered_by-chocolate_factory-blue?logo=kotlin&logoColor=fff" alt="Powered By" />
   </a>  
@@ -16,10 +19,6 @@ DevOpsGenius 旨在以结合 LLM 重塑软件开发中的 DevOps 实践。将 LL
 - **智能拉取请求处理**：DevOpsGenius 能够智能地审查和处理拉取请求。它自动识别代码变更、冲突和合并请求，并以自动化的方式进行验证、测试和部署流程，以确保高质量的代码交付。
 - **自动 bug 分析与修复建议**：DevOpsGenius 能够自动分析 bug，识别 bug 中的问题和不足，并提供有针对性的建议和改进意见。
 - **智能报告和统计**：DevOpsGenius生成详细的报告和统计数据，展示代码质量、团队绩效和项目进度等关键指标。这些洞察力有助于团队进行数据驱动的决策，优化开发流程和资源分配。
-
-## CI/CD
-
-Jenkins file: [https://www.jenkins.io/doc/pipeline/examples/](https://www.jenkins.io/doc/pipeline/examples/)
 
 ## CodeReview Design
 
@@ -58,6 +57,12 @@ DevOps 平台：[https://devops.phodal.com](https://devops.phodal.com/checklists
     - 忽略配置文件。
 3. 处理文件目录移动，文件重命名的情况。（即忽略文件的变更）
 4. 使用传统工具，检测语法问题，诸如 pre-commit 的情况。
+
+## CI/CD
+
+读取和生成项目的构建信息，如 Gradle、Maven、Makefile 等，再结合对应的构建工具，生成对应的 CI/CD 脚本，如 Jenkinsfile、.gitlab-ci.yml、.github/workflows 等。
+
+Jenkins file: [https://www.jenkins.io/doc/pipeline/examples/](https://www.jenkins.io/doc/pipeline/examples/)
 
 ## License
 
