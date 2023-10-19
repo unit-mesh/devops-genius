@@ -1,7 +1,7 @@
 remote_theme: pmarsceill/just-the-docs
 
 title: DevOpsGenius
-description:  DevOpsGenius 旨在以结合 LLM 重塑软件开发中的 DevOps 实践。将 LLM 视为团队的初级 “打杂工”，为团队提供各类辅助能力，以提高开发流程的效率和质量。
+description: DevOpsGenius 旨在结合 LLM 重塑软件开发中的 DevOps 实践。将 LLM 视为团队的初级 “打杂工”，为团队提供各类辅助能力，以提高开发流程的效率和质量。
 
 heading_anchors: true
 
@@ -71,8 +71,8 @@ back_to_top_text: "Back to top"
 
 # Google Analytics Tracking (optional)
 # e.g, UA-1234567-89
-ga_tracking: G-JR0EZ3NLE1
-ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
+#ga_tracking: G-JR0EZ3NLE1
+#ga_tracking_anonymize_ip: true # Use GDPR compliant Google Analytics settings (true by default)
 
 url: "https://devops.unitmesh.cc" # the base hostname & protocol for your site
 
