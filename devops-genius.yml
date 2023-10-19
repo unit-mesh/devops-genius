@@ -12,13 +12,8 @@ store:
 
 kanban:
   type: GitHub
-  token: "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"
 
-connection:
-  name: open_ai_connection
-  type: OpenAI
-  secrets:
-    api-key: xxxx
+connection: connection.yml
 
 commitLog:
   ignoreType: [ "chore", "docs", "style" ]

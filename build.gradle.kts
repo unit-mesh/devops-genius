@@ -1,4 +1,3 @@
-@Suppress("DSL_SCOPE_VIOLATION")
 plugins {
     java
     application
@@ -8,22 +7,34 @@ plugins {
     alias(libs.plugins.shadow)
 }
 
-dependencies {
-    implementation(projects.cocoaCore)
+group = "cc.unitmesh"
+version = "0.4.0"
 
-    implementation(projects.codeModules.gitDiffer)
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url = uri("https://repo.spring.io/snapshot")
+        name = "Spring Snapshots"
+    }
+    maven(url = uri("https://packages.jetbrains.team/maven/p/ktls/maven"))
+}
+
+dependencies {
     implementation(libs.codedb.checkout)
     implementation(libs.archguard.analyser.diffChanges)
 
-    implementation(projects.codeModules.codeSplitter)
-    implementation(projects.codeModules.gitCommitMessage)
+    implementation("cc.unitmesh:cocoa-core:0.4.0")
+    implementation("cc.unitmesh:git-differ:0.4.0")
+    implementation("cc.unitmesh:code-splitter:0.4.0")
+    implementation("cc.unitmesh:git-commit-message:0.4.0")
 
-    implementation(projects.llmModules.sentenceTransformers)
-    implementation(projects.llmModules.connection)
-    implementation(projects.llmModules.openai)
+    implementation("cc.unitmesh:sentence-transformers:0.4.0")
+    implementation("cc.unitmesh:connection:0.4.0")
+    implementation("cc.unitmesh:openai:0.4.0")
 
-    implementation(projects.ragModules.storeElasticsearch)
-    implementation(projects.ragModules.document)
+    implementation("cc.unitmesh:store-elasticsearch:0.4.0")
+    implementation("cc.unitmesh:document:0.4.0")
 
     implementation(libs.kaml)
     implementation(libs.github.api)
