@@ -6,8 +6,18 @@ has_children: true
 permalink: /code-review
 ---
 
-
 # CodeReview Design
+
+```mermaid
+graph TD
+A[开始] --> B[获取 commit messages]
+B --> C[解析 commit messages]
+C --> D[通过 commit type 过滤不需要 review 的 commits]
+D --> E[获取 User Stories 标题]
+E --> F[生成 patch 文件]
+F --> G[过滤不需要 review 的文件]
+G --> H[交由 LLM 处理]
+```
 
 DevOps 平台：[https://devops.phodal.com](https://devops.phodal.com/checklists/code-review) 的代码检视检查清单。
 
