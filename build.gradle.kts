@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "cc.unitmesh"
-version = "0.4.0"
+version = "0.1.0"
 
 repositories {
     mavenCentral()
@@ -29,11 +29,12 @@ dependencies {
     implementation("cc.unitmesh:code-splitter:0.4.0")
     implementation("cc.unitmesh:git-commit-message:0.4.0")
 
-    implementation("cc.unitmesh:sentence-transformers:0.4.0")
     implementation("cc.unitmesh:connection:0.4.0")
     implementation("cc.unitmesh:openai:0.4.0")
 
-    implementation("cc.unitmesh:store-elasticsearch:0.4.0")
+//    implementation("cc.unitmesh:sentence-transformers:0.4.0")
+//    implementation("cc.unitmesh:store-elasticsearch:0.4.0")
+
     implementation("cc.unitmesh:document:0.4.0")
 
     implementation(libs.kaml)
