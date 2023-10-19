@@ -6,7 +6,10 @@
   </a>
   <a href="https://github.com/unit-mesh/chocolate-factory">
     <img src="https://img.shields.io/badge/powered_by-chocolate_factory-blue?logo=kotlin&logoColor=fff" alt="Powered By" />
-  </a>  
+  </a>
+  <a href="https://github.com/unit-mesh/devops-genius/releases">
+    <img alt="GitHub release (with filter)" src="https://img.shields.io/github/v/release/unit-mesh/devops-genius">
+  </a>
 </p>
 
 [Read the docs →](https://devops.unitmesh.cc/)

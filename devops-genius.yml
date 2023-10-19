@@ -1,10 +1,5 @@
 name: "ChocolateFactory"
-repo: "." # relative to the project root, or GitHub repo, like "unitmesh/chocolate-factory"
-
-# the doc for [org.changelog.CommitParser]
-commit:
-  noteKeywords: [ "BREAKING CHANGE", "BREAKING-CHANGE" ]
-  issuePrefixes: [ "#" ]
+path: "." # relative to the project root, or GitHub repo, like "unitmesh/chocolate-factory"
 
 # store the changelog in the repo
 store:
@@ -13,7 +8,7 @@ store:
 kanban:
   type: GitHub
 
-connection: connection.yml
+connection: connection.template.yml
 
 commitLog:
   ignoreType: [ "chore", "docs", "style" ]
