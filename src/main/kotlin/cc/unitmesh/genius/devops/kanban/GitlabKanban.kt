@@ -6,7 +6,7 @@ import org.gitlab4j.api.GitLabApi
 class GitlabKanban(val repoUrl: String, val token: String) : Kanban {
     private var gitLabApi: GitLabApi = GitLabApi(repoUrl, token)
     override fun fetch(id: String): Issue {
-        val issue: org.gitlab4j.api.models.Issue = gitLabApi.issuesApi.getIssue(repoUrl, id.toInt())
+        val issue: org.gitlab4j.api.models.Issue = gitLabApi.issuesApi.getIssue(repoUrl, id.toLong())
         return Issue(
             issue.iid.toString(),
             issue.title,
