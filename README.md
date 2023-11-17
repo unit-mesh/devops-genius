@@ -1,5 +1,7 @@
 <h1 align="center">DevOps Genius</h1>
-
+<p align="center">
+  <img src="docs/logo.svg"" width="160px" height="160px"  alt="logo" />
+</p>
 <p align="center">
   <a href="https://github.com/unit-mesh/devops-genius/actions/workflows/build.yml">
     <img src="https://github.com/unit-mesh/devops-genius/actions/workflows/build.yml/badge.svg" alt="CI/CD" />
