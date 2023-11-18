@@ -24,18 +24,18 @@ dependencies {
     implementation(libs.codedb.checkout)
     implementation(libs.archguard.analyser.diffChanges)
 
-    implementation("cc.unitmesh:cocoa-core:0.4.0")
-    implementation("cc.unitmesh:git-differ:0.4.0")
-    implementation("cc.unitmesh:code-splitter:0.4.0")
-    implementation("cc.unitmesh:git-commit-message:0.4.0")
+    implementation("cc.unitmesh:cocoa-core:0.4.3")
+    implementation("cc.unitmesh:git-differ:0.4.3")
+    implementation("cc.unitmesh:code-splitter:0.4.3")
+    implementation("cc.unitmesh:git-commit-message:0.4.3")
 
-    implementation("cc.unitmesh:connection:0.4.0")
-    implementation("cc.unitmesh:openai:0.4.0")
+    implementation("cc.unitmesh:connection:0.4.3")
+    implementation("cc.unitmesh:openai:0.4.3")
 
-//    implementation("cc.unitmesh:sentence-transformers:0.4.0")
-//    implementation("cc.unitmesh:store-elasticsearch:0.4.0")
+//    implementation("cc.unitmesh:sentence-transformers:0.4.3")
+//    implementation("cc.unitmesh:store-elasticsearch:0.4.3")
 
-    implementation("cc.unitmesh:document:0.4.0")
+    implementation("cc.unitmesh:document:0.4.3")
 
     implementation(libs.kaml)
     implementation(libs.github.api)
