@@ -63,4 +63,8 @@ tasks {
             attributes(Pair("Main-Class", "cc.unitmesh.genius.MainKt"))
         }
     }
+
+    withType<Test> {
+        useJUnitPlatform()
+    }
 }
