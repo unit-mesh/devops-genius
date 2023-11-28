@@ -89,7 +89,7 @@ class CodeReviewCommand : CliktCommand(help = "Code Review with AIGC") {
     }
 
     private fun createCommitParser(): CommitParser {
-        val parserOptions = if (commitMessageOptionFile.isNotEmpty()) {
+        val parserOptions = if (commitMessageOptionFile.isNotEmpty() and Path(commitMessageOptionFile).exists()) {
             val commitMsgOptionText = File(commitMessageOptionFile).readText()
             ParserOptions.fromString(commitMsgOptionText)
         } else {
